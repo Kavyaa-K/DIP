@@ -19,3 +19,7 @@ cv2.imshow('Gray', gray)
 cv2.imwrite('sample.jpg',gray) 
 cv2.waitKey(0) 
 cv2.destroyAllWindows()
+
+
+
+
