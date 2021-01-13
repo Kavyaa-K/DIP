@@ -131,7 +131,50 @@ cv2.imshow("Binary Image",bw_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
+**Output:**
 ![image](https://user-images.githubusercontent.com/72294293/104428838-f2214500-55aa-11eb-82e5-9d445b3808b7.png)
+
+5.Write a program to convert color image into different color space.
+
+**Description**
+Color spaces are a way to represent the color channels present in the image that gives the image that particular hue
+BGR color space: OpenCV’s default color space is RGB. 
+HSV color space: It stores color information in a cylindrical representation of RGB color points. It attempts to depict the colors as perceived by the human eye. Hue value varies from 0-179, Saturation value varies from 0-255 and Value value varies from 0-255. 
+LAB color space :
+L – Represents Lightness.A – Color component ranging from Green to Magenta.B – Color component ranging from Blue to Yellow.
+The HSL color space, also called HLS or HSI, stands for:Hue : the color type Ranges from 0 to 360° in most applications 
+Saturation : variation of the color depending on the lightness.
+Lightness :(also Luminance or Luminosity or Intensity). Ranges from 0 to 100% (from black to white).
+YUV:Y refers to the luminance or intensity, and U/V channels represent color information. This works well in many applications because the human visual system perceives intensity information very differently from color information.
+
+**program**
+import cv2
+img = cv2.imread("Cat.jpg")
+gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB)
+hls=cv2.cvtColor(img,cv2.COLOR_BGR2HLS)
+yuv=cv2.cvtColor(img,cv2.COLOR_BGR2YUV)
+
+cv2.imshow("GRAY image",gray)
+cv2.waitKey(0)
+
+cv2.imshow("HSV image",hsv)
+cv2.waitKey(0)
+
+cv2.imshow("LAB image",lab)
+cv2.waitKey(0)
+
+cv2.imshow("HLS image",hls)
+cv2.waitKey(0)
+
+cv2.imshow("YUV image",yuv)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+ret, bw_img = cv2.threshold(img,127,255,cv2.THRESH_BINARY)
+cv2.destroyAllWindows()
+
+**Output:**
 
 
 
