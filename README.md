@@ -203,7 +203,13 @@ c.waitKey(0)
 ![image](https://user-images.githubusercontent.com/72294293/104430162-55f83d80-55ac-11eb-9249-67ecce742c25.png)
 
 
-Q7)find the sum of neighborhood value of the matrix:
+Q7)Find the sum of neighborhood value of the matrix.
+
+**Description**
+The append() method appends an element to the end of the list.
+shape() is a tuple that gives dimensions of the array.. shape is a tuple that gives you an indication of the number of dimensions in the array. So in your case, since the index value of Y. 
+
+
 
 **Program**
 import numpy as np
