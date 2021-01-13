@@ -131,7 +131,7 @@ cv2.imshow("Binary Image",bw_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-
+![image](https://user-images.githubusercontent.com/72294293/104428838-f2214500-55aa-11eb-82e5-9d445b3808b7.png)
 
 
 
