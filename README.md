@@ -200,7 +200,7 @@ img.show()
 c.waitKey(0)
 
 **Output:**
-
+![image](https://user-images.githubusercontent.com/72294293/104430162-55f83d80-55ac-11eb-9249-67ecce742c25.png)
 
 
 
