@@ -179,6 +179,33 @@ cv2.destroyAllWindows()
 ![image](https://user-images.githubusercontent.com/72294293/104429689-ebdf9880-55ab-11eb-8d8f-601e5669c381.png)
 
 
+Q6.Develop a program to create an image from 2D array.
+
+**Description**
+2D array can be defined as an array of arrays. The 2D array is organized as matrices which can be represented as the collection of rows and columns. However, 2D arrays are created to implement a relational database look alike data structure.
+numpy.zeros() function returns a new array of given shape and type, with zeros.
+Image.fromarray(array) is creating image object of above array
+
+**program**
+import numpy as np
+from PIL import Image
+import cv2 as c 
+array = np.zeros([100, 200, 3], dtype=np.uint8)
+array[:,:100] = [150, 128, 0] #Orange left side
+array[:,100:] = [0, 0, 255]   #Blue right side
+
+img = Image.fromarray(array)
+img.save('Panda.jpg')
+img.show()
+c.waitKey(0)
+
+**Output:**
+
+
+
+
+
+
 
 
 
