@@ -60,5 +60,33 @@ cv2.destroyAllWindows()
 ![image](https://user-images.githubusercontent.com/72294293/104425426-ac627d80-55a6-11eb-8d93-26c109923644.png)
 
 
+Q3)
+import cv2
+import os
+path = 'E:\IP1'
+imgs = []
+
+files = os.listdir(path)
+for file in files:
+    filepath=path+"\\"+file
+    imgs.append(cv2.imread(filepath))
+i=0
+im = []
+for im in imgs:
+    #cv2.imshow(files[i],imgs[i])
+    im+=imgs[i]
+    i=i+1
+cv2.imshow("sum of four pictures",im)
+meanImg = im/len(files)
+cv2.imshow("mean of four pictures",meanImg)
+cv2.waitKey(0)
+
+**Output**
+
+
+
+
+
+
 
 
