@@ -19,7 +19,7 @@ cv2.imshow('Gray', gray)
 cv2.imwrite('sample.jpg',gray) 
 cv2.waitKey(0) 
 cv2.destroyAllWindows()
-
+![image](https://user-images.githubusercontent.com/72294293/104423697-6c9a9680-55a4-11eb-81c0-e202500b807c.png)
 
 
 
