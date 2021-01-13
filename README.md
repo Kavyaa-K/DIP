@@ -24,9 +24,13 @@ cv2.destroyAllWindows()
 ![image](https://user-images.githubusercontent.com/72294293/104423697-6c9a9680-55a4-11eb-81c0-e202500b807c.png)
 
 
+
+
+
 Q2) Develop the program to perform linear transformation on image. Description
 
 **Program Rotation of the image:**
+A)
 import cv2 import numpy as np 
 img = cv2.imread('p17.jpg') 
 (rows, cols) = img.shape[:2] 
@@ -39,6 +43,20 @@ cv2.destroyAllWindows()
 
 **Output:**
 ![image](https://user-images.githubusercontent.com/72294293/104424552-88eb0300-55a5-11eb-95f0-6aa41f691bef.png)
+
+B) 
+Resizing of image. 
+import cv2 
+import numpy as np 
+img = cv2.imread('p17.jpg') 
+(height, width) = img.shape[:2] 
+res = cv2.resize(img, (int(width / 2), int(height / 2)), interpolation = cv2.INTER_CUBIC) 
+cv2.imshow('result', res) 
+cv2.imshow('image',img) 
+cv2.waitKey(0) 
+cv2.destroyAllWindows()
+
+**Output:**
 
 
 
