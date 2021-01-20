@@ -384,32 +384,6 @@ multiplication is
  19     46
  18     47
 
-**Q9) Find the neighbours of matrix**
-
-**Program:**
-import numpy as np
-i=0
-j=0
-a= np.array([[1,2,3,4,5], [2,3,4,5,6],[3,4,5,6,7],[4,5,6,7,8],[5,6,7,8,9]])
-print("a : ",str(a))
-def neighbors(radius, rowNumber, columnNumber):
-     return [[a[i][j] if  i >= 0 and i < len(a) and j >= 0 and j < len(a[0]) else 0
-                for j in range(columnNumber-1-radius, columnNumber+radius)]
-                    for i in range(rowNumber-1-radius, rowNumber+radius)]
-neighbors(2, 3, 4)
-
-**Output**
-
-a :  [[1 2 3 4 5]
- [2 3 4 5 6]
- [3 4 5 6 7]
- [4 5 6 7 8]
- [5 6 7 8 9]]
-[[2, 3, 4, 5, 0],
- [3, 4, 5, 6, 0],
- [4, 5, 6, 7, 0],
- [5, 6, 7, 8, 0],
- [6, 7, 8, 9, 0]]
 
 
 
