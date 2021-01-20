@@ -242,6 +242,7 @@ print ("Summed neighbors matrix:\n", N)
 
 **Q8)Operator Overloading** 
 
+**Program:**
 #include <iostream>
 using namespace std;
 class matrix
@@ -385,6 +386,7 @@ multiplication is
 
 **Q9) Find the neighbours of matrix**
 
+**Program:**
 import numpy as np
 i=0
 j=0
