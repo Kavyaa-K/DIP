@@ -385,7 +385,7 @@ multiplication is
  18     47
 
 
-Q9)Find the neighborhood values of the matrix
+Q9)Find the each neighborhood values of the matrix
 
 **Program**
 import numpy as np
