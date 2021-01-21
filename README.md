@@ -398,7 +398,7 @@ def neighbors(radius, rowNumber, columnNumber):
 neighbors(1, 2, 1)
  
  
-## Output:
+**Output:**
 
 initial_array :  [[1 2 5 3]
  [4 5 4 7]
