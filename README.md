@@ -16,6 +16,7 @@ destroyAllWindows():function to close all the windows. cv2. cvtColor() method is
 np.concatenate: Concatenation refers to joining. This function is used to join two or more arrays of the same shape along a specified axis.
 
 **Program**
+```python
 import cv2 
 import numpy as np 
 image = cv2.imread('p4.jpg') 
@@ -26,7 +27,7 @@ cv2.imshow('Gray', gray)
 cv2.imwrite('sample.jpg',gray) 
 cv2.waitKey(0) 
 cv2.destroyAllWindows()
-
+```
 **Output:**
 ![image](https://user-images.githubusercontent.com/72294293/104423697-6c9a9680-55a4-11eb-81c0-e202500b807c.png)
 
