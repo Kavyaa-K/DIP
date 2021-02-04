@@ -45,6 +45,7 @@ cv2.resize() method refers to the scaling of images. Scaling comes handy in many
 imshow() function in pyplot module of matplotlib library is used to display data as an image
 
 **Program:**
+```python
 import cv2 import numpy as np 
 img = cv2.imread('p17.jpg') 
 (rows, cols) = img.shape[:2] 
@@ -54,6 +55,7 @@ cv2.imshow('result', res)
 cv2.imshow('image',img) 
 cv2.waitKey(0) 
 cv2.destroyAllWindows()
+```
 
 **Output:**
 ![image](https://user-images.githubusercontent.com/72294293/104424552-88eb0300-55a5-11eb-95f0-6aa41f691bef.png)
@@ -66,6 +68,7 @@ cv2.getRotationMatrix2D Perform the counter clockwise rotation
 warpAffine() function is the size of the output image, which should be in the form of (width, height). Remember width = number of columns, and height = number of rows.
 
 **Program**
+```python
 import cv2 
 import numpy as np 
 img = cv2.imread('p17.jpg') 
@@ -75,6 +78,7 @@ cv2.imshow('result', res)
 cv2.imshow('image',img) 
 cv2.waitKey(0) 
 cv2.destroyAllWindows()
+```
 
 **Output:**
 ![image](https://user-images.githubusercontent.com/72294293/104425426-ac627d80-55a6-11eb-8d93-26c109923644.png)
@@ -88,6 +92,7 @@ The append() method in python adds a single item to the existing list.
 listdir() method in python is used to get the list of all files and directories in the specified directory.
 
 **Program:**
+```python
 import cv2
 import os
 path = 'E:\IP1'
@@ -107,6 +112,7 @@ cv2.imshow("sum of four pictures",im)
 meanImg = im/len(files)
 cv2.imshow("mean of four pictures",meanImg)
 cv2.waitKey(0)
+```
 
 **Output**
 ![image](https://user-images.githubusercontent.com/72294293/104426618-2fd09e80-55a8-11eb-88f2-d45eeb59614b.png)
@@ -121,6 +127,7 @@ destroyAllWindows() simply destroys all the windows we created.
 To destroy any specific window, use the function cv2. destroyWindow() where you pass the exact window name.
 
 **Program:**
+```python
 import cv2
 img = cv2.imread("Dog.jpg")
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
@@ -131,6 +138,7 @@ ret, bw_img = cv2.threshold(img,127,255,cv2.THRESH_BINARY)
 cv2.imshow("Binary Image",bw_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+```
 
 **Output:**
 ![image](https://user-images.githubusercontent.com/72294293/104428838-f2214500-55aa-11eb-82e5-9d445b3808b7.png)
@@ -149,6 +157,7 @@ Lightness :(also Luminance or Luminosity or Intensity). Ranges from 0 to 100% (f
 YUV:Y refers to the luminance or intensity, and U/V channels represent color information. This works well in many applications because the human visual system perceives intensity information very differently from color information.
 
 **program**
+```python
 import cv2
 img = cv2.imread("Cat.jpg")
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
@@ -174,6 +183,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ret, bw_img = cv2.threshold(img,127,255,cv2.THRESH_BINARY)
 cv2.destroyAllWindows()
+```
 
 **Output:**
 ![image](https://user-images.githubusercontent.com/72294293/104429392-90ada600-55ab-11eb-8abb-5270160441d2.png)
@@ -188,6 +198,7 @@ numpy.zeros() function returns a new array of given shape and type, with zeros.
 Image.fromarray(array) is creating image object of above array
 
 **program**
+```python
 import numpy as np
 from PIL import Image
 import cv2 as c 
@@ -199,6 +210,7 @@ img = Image.fromarray(array)
 img.save('Panda.jpg')
 img.show()
 c.waitKey(0)
+```
 
 **Output:**
 ![image](https://user-images.githubusercontent.com/72294293/104430162-55f83d80-55ac-11eb-9249-67ecce742c25.png)
@@ -211,8 +223,8 @@ The append() method appends an element to the end of the list.
 shape() is a tuple that gives dimensions of the array.. shape is a tuple that gives you an indication of the number of dimensions in the array. So in your case, since the index value of Y. 
 
 
-
 **Program**
+```python
 import numpy as np
 M = [[1, 2, 3],
     [4, 5, 6],
@@ -236,6 +248,7 @@ for i in range(M.shape[0]):
 
 print ("Original matrix:\n", M)
 print ("Summed neighbors matrix:\n", N)
+```
 
 **Output:**
 ![image](https://user-images.githubusercontent.com/72294293/104438834-73320980-55b6-11eb-937b-7d3e62da6cc6.png)
@@ -244,6 +257,7 @@ print ("Summed neighbors matrix:\n", N)
 **Q8)Operator Overloading** 
 
 **Program:**
+```python
 #include <iostream>
 using namespace std;
 class matrix
@@ -356,7 +370,7 @@ int main()
  p * q;
 return 0;
 }
-
+```
 **Output**
 
 Enter the row and column size for the  matrix
@@ -389,6 +403,7 @@ multiplication is
 Q9)Find the each neighborhood values of the matrix
 
 **Program**
+```python
 import numpy as np
 ini_array = np.array([[1, 2,5, 3], [4,5, 4, 7], [9, 6, 1,0]])
 print("initial_array : ", str(ini_array));
@@ -397,7 +412,7 @@ def neighbors(radius, rowNumber, columnNumber):
             for j in range(columnNumber-1-radius, columnNumber+radius)]
            for i in range(rowNumber-1-radius, rowNumber+radius)]
 neighbors(1, 2, 1)
- 
+``` 
  
 **Output:**
 
